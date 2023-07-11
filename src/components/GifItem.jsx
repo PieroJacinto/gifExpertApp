@@ -11,15 +11,6 @@ export const GifItem = ( { title, url, id } ) => {
   )
 }
 
-/* tarea
-
-1. Añadir Proptypes ???? yarn add
-  a. title obligatorio
-  b. url obligatorio
-
-2. Evaluar el snapshot
-
-*/
 
 GifItem.propTypes = {
   title : PropTypes.string.isRequired,

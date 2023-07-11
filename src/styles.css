@@ -35,29 +35,34 @@
   }
   
   .card {
-    align-content: center;
-    align-items: center;
-    background-color: white;
-    border-radius: 10px;
-    box-shadow: 0px 3px 5px rgba(0, 0, 0, 0.03);
+    width: 350px; /* Tamaño fijo para el contenedor de la tarjeta */
+    height: 450px; /* Tamaño fijo para el contenedor de la tarjeta */
     display: flex;
     flex-direction: column;
-    height: 0%;  
+    align-items: center;
     justify-content: center;
     margin-bottom: 20px;
     margin-right: 20px;
+    box-shadow: 0px 3px 5px rgba(0, 0, 0, 0.03);
+    border-radius: 10px;
     overflow: hidden;
   }
   
   .card p {
-    background-color: white;
-    flex: 1;
-    font-size: 1.5rem;
+    font-size: 1rem;
     margin-top: 5px;
     padding: 5px 20px 0px 20px;
     text-align: center;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
   }
   
   .card img {
     width: 100%;
+    height: 100%;
+    object-fit: cover;
   }
+  
+  
+  
